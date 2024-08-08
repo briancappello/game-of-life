@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "game-of-life"
+version = "0.1.0"
+description = "Conway's Game of Life in FP"
+authors = ["Brian Cappello <briancappello@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "game_of_life.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
